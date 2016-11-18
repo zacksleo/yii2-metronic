@@ -25,9 +25,9 @@ class MetronicAsset extends AssetBundle
     ];
     public $depends = [
         'yii\bootstrap\BootstrapPluginAsset',
-        'zacksleo\yii2\metronic\FontAwesomeAsset',
-        'zacksleo\yii2\metronic\JquerySlimscrollAsset',
-        'zacksleo\yii2\metronic\JsCookieAsset',
-        'zacksleo\yii2\metronic\SimpleLineIconsAsset',
+        'zacksleo\yii2\metronic\bundles\FontAwesomeAsset',
+        'zacksleo\yii2\metronic\bundles\JquerySlimscrollAsset',
+        'zacksleo\yii2\metronic\bundles\JsCookieAsset',
+        'zacksleo\yii2\metronic\bundles\SimpleLineIconsAsset',
     ];
 }
