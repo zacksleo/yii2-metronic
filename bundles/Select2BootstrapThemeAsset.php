@@ -17,6 +17,6 @@ class Select2BootstrapThemeAsset extends AssetBundle
         ]
     ];
     public $depends = [
-        'app\assets\Select2Asset',
+        'zacksleo\yii2\metronic\bundles\Select2Asset',
     ];
 }
