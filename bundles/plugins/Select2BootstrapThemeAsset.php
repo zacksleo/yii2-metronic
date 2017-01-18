@@ -1,6 +1,6 @@
 <?php
 
-namespace zacksleo\yii2\metronic\bundles;
+namespace zacksleo\yii2\metronic\bundles\plugins;
 
 
 use yii\web\AssetBundle;
@@ -17,6 +17,6 @@ class Select2BootstrapThemeAsset extends AssetBundle
         ]
     ];
     public $depends = [
-        'zacksleo\yii2\metronic\bundles\Select2Asset',
+        'zacksleo\yii2\metronic\bundles\plugins\Select2Asset',
     ];
 }

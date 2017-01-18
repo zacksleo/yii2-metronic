@@ -1,19 +1,19 @@
 <?php
 
-namespace zacksleo\yii2\metronic\bundles;
+namespace zacksleo\yii2\metronic\bundles\plugins;
 
 use yii\web\AssetBundle;
 use yii\web\View;
 
-class JqueryBackstretchAsset extends AssetBundle
+class JsCookieAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/jquery-backstretch-hugoj';
+    public $sourcePath = '@bower/js-cookie';
     public $js = [
-        'jquery.backstretch.min.js'
+        'src/js.cookie.js'
     ];
     public $publishOptions = [
         'only' => [
-            'jquery.backstretch.min.js'
+            'src/*'
         ]
     ];
     public $depends = [
@@ -22,4 +22,5 @@ class JqueryBackstretchAsset extends AssetBundle
     public $jsOptions = [
         'position' => View::POS_END
     ];
+
 }

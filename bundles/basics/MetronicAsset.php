@@ -1,6 +1,6 @@
 <?php
 
-namespace zacksleo\yii2\metronic\bundles;
+namespace zacksleo\yii2\metronic\bundles\basics;
 
 use yii\web\AssetBundle;
 
@@ -25,9 +25,9 @@ class MetronicAsset extends AssetBundle
     ];
     public $depends = [
         'yii\bootstrap\BootstrapPluginAsset',
-        'zacksleo\yii2\metronic\bundles\FontAwesomeAsset',
-        'zacksleo\yii2\metronic\bundles\JquerySlimscrollAsset',
-        'zacksleo\yii2\metronic\bundles\JsCookieAsset',
-        'zacksleo\yii2\metronic\bundles\SimpleLineIconsAsset',
+        'zacksleo\yii2\metronic\bundles\plugins\FontAwesomeAsset',
+        'zacksleo\yii2\metronic\bundles\plugins\JquerySlimscrollAsset',
+        'zacksleo\yii2\metronic\bundles\plugins\JsCookieAsset',
+        'zacksleo\yii2\metronic\bundles\plugins\SimpleLineIconsAsset',
     ];
 }

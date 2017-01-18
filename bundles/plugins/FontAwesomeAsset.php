@@ -1,6 +1,6 @@
 <?php
 
-namespace zacksleo\yii2\metronic\bundles;
+namespace zacksleo\yii2\metronic\bundles\plugins;
 
 use yii\web\AssetBundle;
 

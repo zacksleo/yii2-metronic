@@ -1,19 +1,19 @@
 <?php
 
-namespace zacksleo\yii2\metronic\bundles;
+namespace zacksleo\yii2\metronic\bundles\plugins;
 
 use yii\web\AssetBundle;
 use yii\web\View;
 
-class JquerySlimscrollAsset extends AssetBundle
+class JqueryBackstretchAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/jquery.slimscroll';
+    public $sourcePath = '@bower/jquery-backstretch-hugoj';
     public $js = [
-        'jquery.slimscroll.min.js'
+        'jquery.backstretch.min.js'
     ];
     public $publishOptions = [
-        'except' => [
-            'examples'
+        'only' => [
+            'jquery.backstretch.min.js'
         ]
     ];
     public $depends = [

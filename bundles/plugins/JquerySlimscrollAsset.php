@@ -1,19 +1,19 @@
 <?php
 
-namespace zacksleo\yii2\metronic\bundles;
+namespace zacksleo\yii2\metronic\bundles\plugins;
 
 use yii\web\AssetBundle;
 use yii\web\View;
 
-class JsCookieAsset extends AssetBundle
+class JquerySlimscrollAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/js-cookie';
+    public $sourcePath = '@bower/jquery.slimscroll';
     public $js = [
-        'src/js.cookie.js'
+        'jquery.slimscroll.min.js'
     ];
     public $publishOptions = [
-        'only' => [
-            'src/*'
+        'except' => [
+            'examples'
         ]
     ];
     public $depends = [
@@ -22,5 +22,4 @@ class JsCookieAsset extends AssetBundle
     public $jsOptions = [
         'position' => View::POS_END
     ];
-
 }
