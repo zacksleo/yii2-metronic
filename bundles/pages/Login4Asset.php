@@ -15,8 +15,8 @@ class Login4Asset extends AssetBundle
         // 'pages/scripts/login-4.min.js'
     ];
     public $depends = [
-        'zacksleo\yii2\metronic\bundles\JqueryBackstretchAsset',
-        'zacksleo\yii2\metronic\bundles\JqueryValidationAsset',
-        'zacksleo\yii2\metronic\bundles\MetronicAsset',
+        'zacksleo\yii2\metronic\bundles\plugins\JqueryBackstretchAsset',
+        'zacksleo\yii2\metronic\bundles\plugins\JqueryValidationAsset',
+        'zacksleo\yii2\metronic\bundles\plugins\MetronicAsset',
     ];
 }
