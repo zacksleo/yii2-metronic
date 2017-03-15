@@ -5,8 +5,7 @@ namespace zacksleo\yii2\metronic\bundles\layouts;
 use yii\web\AssetBundle;
 
 /**
- * @author Qiang Xue <qiang.xue@gmail.com>
- * @since 2.0
+ * @author zacksleo <zacks.leo@gmail.com>
  */
 class LayoutAsset extends AssetBundle
 {
