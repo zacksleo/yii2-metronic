@@ -10,3 +10,4 @@ gen
 package.json
 node_modules
 !.gitignore
+/vendor
