@@ -2,7 +2,6 @@
 
 namespace zacksleo\yii2\metronic\bundles\plugins;
 
-
 use yii\web\AssetBundle;
 
 class Select2BootstrapThemeAsset extends AssetBundle
