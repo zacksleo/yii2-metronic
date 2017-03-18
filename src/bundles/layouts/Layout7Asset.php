@@ -7,7 +7,7 @@ use yii\web\AssetBundle;
 /**
  * @author zacksleo <zacks.leo@gmail.com>
  */
-class Layout2Asset extends AssetBundle
+class Layout7Asset extends AssetBundle
 {
     public $sourcePath = '@vendor/zacksleo/metronic';
 

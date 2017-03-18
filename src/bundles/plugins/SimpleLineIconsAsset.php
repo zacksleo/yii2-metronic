@@ -20,6 +20,4 @@ class SimpleLineIconsAsset extends AssetBundle
             'css/*'
         ]
     ];
-
-
 }

@@ -5,7 +5,6 @@ namespace zacksleo\yii2\metronic\bundles\plugins;
 use yii\web\AssetBundle;
 use yii\web\View;
 
-
 class Select2Asset extends AssetBundle
 {
     public $sourcePath = '@bower/select2';

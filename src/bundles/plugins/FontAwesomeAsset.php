@@ -16,5 +16,4 @@ class FontAwesomeAsset extends AssetBundle
             'css/*'
         ]
     ];
-
 }

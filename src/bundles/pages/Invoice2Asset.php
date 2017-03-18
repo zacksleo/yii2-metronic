@@ -4,7 +4,7 @@ namespace zacksleo\yii2\metronic\bundles\pages;
 
 use yii\web\AssetBundle;
 
-class AboutAsset extends AssetBundle
+class Invoice2Asset extends AssetBundle
 {
     public $sourcePath = '@vendor/zacksleo/metronic';
 

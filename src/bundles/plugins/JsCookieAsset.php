@@ -22,5 +22,4 @@ class JsCookieAsset extends AssetBundle
     public $jsOptions = [
         'position' => View::POS_END
     ];
-
 }
