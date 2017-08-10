@@ -25,6 +25,5 @@ class MetronicAssetTest extends TestCase
         $this->assertContains('global/css/plugins-md.min.css', $content);
         $this->assertContains('global/scripts/app.min.js', $content);
         $this->assertContains('layouts/global/scripts/quick-sidebar.min.js', $content);
-
     }
 }
