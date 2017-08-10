@@ -17,9 +17,14 @@ class MetronicAssetTest extends TestCase
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
         MetronicAsset::register($view);
-        $this->assertEquals(5, count($view->assetBundles));
+        $this->assertEquals(8, count($view->assetBundles));
         $this->assertArrayHasKey('zacksleo\\yii2\\metronic\\bundles\\basics\\MetronicAsset', $view->assetBundles);
         $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\basics\\MetronicAsset'] instanceof AssetBundle);
+        $this->assertTrue($view->assetBundles['yii\\bootstrap\\BootstrapPluginAsset'] instanceof AssetBundle);
+        $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\plugins\\FontAwesomeAsset'] instanceof AssetBundle);
+        $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\plugins\\JquerySlimscrollAsset'] instanceof AssetBundle);
+        $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\plugins\\JsCookieAsset'] instanceof AssetBundle);
+        $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\plugins\\SimpleLineIconsAsset'] instanceof AssetBundle);
         $content = $view->renderFile('@tests/data/views/layout.php');
         $this->assertContains('global/css/components-md.min.css', $content);
         $this->assertContains('global/css/plugins-md.min.css', $content);
