@@ -17,7 +17,8 @@ before_script:
 - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
 - composer self-update
 - composer config repositories.metronic vcs git@gitlab.com:zacksleo/metronic.git
-- composer require zacksleo/metronic --prefer-dist -vvv
+- composer config repositories.assert composer https://asset-packagist.org
+- composer require zacksleo/metronic --prefer-dist
 - composer install --prefer-dist --no-interaction
 script:
 - "./vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover"
