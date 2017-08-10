@@ -7,7 +7,7 @@ use yii\web\View;
 
 class JqueryScrollToAsset extends AssetBundle
 {
-    public $sourcePath = '@bower/jquery.scrollTo';
+    public $sourcePath = '@bower/jquery.scrollto';
     public $js = [
         'jquery.scrollTo.min.js'
     ];
