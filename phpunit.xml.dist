@@ -13,9 +13,11 @@
         </testsuite>
     </testsuites>
     <filter>
-        <directory suffix=".php">./src/bundles/basics</directory>
-        <directory suffix=".php">./src/bundles/layouts</directory>
-        <directory suffix=".php">./src/bundles/pages</directory>
-        <directory suffix=".php">./src/bundles/plugins</directory>
+        <whitelist processUncoveredFilesFromWhitelist="true">
+            <directory suffix=".php">./src/bundles</directory>
+        </whitelist>
+        <blacklist>
+            <directory suffix=".php">./vendor</directory>
+        </blacklist>
     </filter>
 </phpunit>
