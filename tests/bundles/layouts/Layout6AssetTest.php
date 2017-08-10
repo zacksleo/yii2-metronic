@@ -9,7 +9,7 @@ use tests\TestCase;
 /**
  * LayoutAssetTest
  */
-class Layout3AssetTest extends TestCase
+class Layout6AssetTest extends TestCase
 {
     public function testAsset()
     {

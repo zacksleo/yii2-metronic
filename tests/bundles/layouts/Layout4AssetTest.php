@@ -15,7 +15,7 @@ class Layout4AssetTest extends TestCase
     {
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
-        Layout3Asset::register($view);
+        Layout4Asset::register($view);
         $this->assertEquals(9, count($view->assetBundles));
         $this->assertArrayHasKey('zacksleo\\yii2\\metronic\\bundles\\layouts\\Layout4Asset', $view->assetBundles);
         $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\layouts\\Layout4Asset'] instanceof AssetBundle);
