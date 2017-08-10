@@ -13,8 +13,9 @@
         </testsuite>
     </testsuites>
     <filter>
-        <whitelist>
-            <directory suffix=".php">./src/assets/bundles</directory>
-        </whitelist>
+        <directory suffix=".php">./src/bundles/basics</directory>
+        <directory suffix=".php">./src/bundles/layouts</directory>
+        <directory suffix=".php">./src/bundles/pages</directory>
+        <directory suffix=".php">./src/bundles/plugins</directory>
     </filter>
 </phpunit>
