@@ -21,7 +21,7 @@ class PortfolioAssetTest extends TestCase
         $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\pages\\PortfolioAsset'] instanceof AssetBundle);
         $content = $view->renderFile('@tests/data/views/layout.php');
         $this->assertContains('global/plugins/cubeportfolio/css/portfolio.min.css', $content);
-        $this->assertContains('pages/scripts/portfolio.min.js', $content);
+        $this->assertContains('pages/scripts/portfolio-1.min.js', $content);
         $this->assertContains('global/plugins/cubeportfolio/js/jquery.cubeportfolio.min.js', $content);
     }
 }
