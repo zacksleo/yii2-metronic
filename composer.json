@@ -17,6 +17,7 @@
   ],
   "require": {
     "yiisoft/yii2": "*",
+    "yiisoft/yii2-bootstrap": "*",
     "bower-asset/bootstrap-markdown": "^2.1",
     "bower-asset/font-awesome": "^4.0",
     "bower-asset/jquery-backstretch-hugoj": "^2.0",
