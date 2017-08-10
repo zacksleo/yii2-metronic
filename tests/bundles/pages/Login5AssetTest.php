@@ -9,7 +9,7 @@ use tests\TestCase;
 /**
  * MetronicAssetTest
  */
-class LockAssetTest extends TestCase
+class Login5AssetTest extends TestCase
 {
     public function testAsset()
     {

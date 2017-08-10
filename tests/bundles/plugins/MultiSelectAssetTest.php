@@ -2,7 +2,7 @@
 
 namespace tests\bundles\pages;
 
-use zacksleo\yii2\metronic\bundles\plugins\Select2Asset;
+use zacksleo\yii2\metronic\bundles\plugins\MultiSelectAsset;
 use Yii;
 use yii\web\AssetBundle;
 use tests\TestCase;
@@ -10,17 +10,18 @@ use tests\TestCase;
 /**
  * MetronicAssetTest
  */
-class Select2AssetTest extends TestCase
+class MultiSelectAssetTest extends TestCase
 {
     public function testAsset()
     {
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
-        Select2Asset::register($view);
-        $this->assertEquals(2, count($view->assetBundles));
-        $this->assertArrayHasKey('zacksleo\\yii2\\metronic\\bundles\\plugins\\Select2Asset', $view->assetBundles);
-        $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\plugins\\Select2Asset'] instanceof AssetBundle);
+        MultiSelectAsset::register($view);
+        $this->assertEquals(3, count($view->assetBundles));
+        $this->assertArrayHasKey('zacksleo\\yii2\\metronic\\bundles\\plugins\\MultiSelectAsset', $view->assetBundles);
+        $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\plugins\\MultiSelectAsset'] instanceof AssetBundle);
         $content = $view->renderFile('@tests/data/views/layout.php');
-        $this->assertContains('dist/js/select2.js', $content);
+        $this->assertContains('css/multi-select.css', $content);
+        $this->assertContains('js/jquery.multi-select.js', $content);
     }
 }
