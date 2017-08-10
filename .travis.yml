@@ -1,34 +1,28 @@
-
 language: php
-
 matrix:
   fast_finish: true
-
 php:
-  - 5.6
-  - 7.1
-
-  # cache vendor dirs
+- 5.6
+- 7.1
 cache:
   directories:
-    - $HOME/.composer/cache
-    - vendor
-
+  - "$HOME/.composer/cache"
+  - vendor
 before_script:
-  - eval $(ssh-agent -s)
-  - echo "${SSH_PRIVATE_KEY}" > ~/deploy.key
-  - chmod 0600 ~/deploy.key
-  - ssh-add ~/deploy.key
-  - mkdir -p ~/.ssh
-  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-  - composer self-update
-  - composer config repositories.metronic vcs git@gitlab.com:zacksleo/metronic.git
-  - composer require zacksleo/metronic --prefer-dist -vvv
-  - composer install --prefer-dist --no-interaction
-
+- eval $(ssh-agent -s)
+- chmod 0600 ./data/id_rsa.key
+- ssh-add ./data/id_rsa.key
+- mkdir -p ~/.ssh
+- '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
+- composer self-update
+- composer config repositories.metronic vcs git@gitlab.com:zacksleo/metronic.git
+- composer require zacksleo/metronic --prefer-dist -vvv
+- composer install --prefer-dist --no-interaction
 script:
-  - ./vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover
-
+- "./vendor/bin/phpunit --coverage-text --coverage-clover=coverage.clover"
 after_script:
-  - wget https://scrutinizer-ci.com/ocular.phar
-  - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+- wget https://scrutinizer-ci.com/ocular.phar
+- php ocular.phar code-coverage:upload --format=php-clover coverage.clover
+dd:
+- openssl aes-256-cbc -K $encrypted_7087153e75f1_key -iv $encrypted_7087153e75f1_iv
+  -in ./data/id_rsa.enc -out id_rsa -d
