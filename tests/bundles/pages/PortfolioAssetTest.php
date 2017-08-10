@@ -16,7 +16,7 @@ class PortfolioAssetTest extends TestCase
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
         PortfolioAsset::register($view);
-        $this->assertEquals(9, count($view->assetBundles));
+        $this->assertEquals(2, count($view->assetBundles));
         $this->assertArrayHasKey('zacksleo\\yii2\\metronic\\bundles\\pages\\PortfolioAsset', $view->assetBundles);
         $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\pages\\PortfolioAsset'] instanceof AssetBundle);
         $content = $view->renderFile('@tests/data/views/layout.php');

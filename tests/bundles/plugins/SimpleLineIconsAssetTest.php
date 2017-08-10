@@ -16,7 +16,7 @@ class SimpleLineIconsAssetTest extends TestCase
     {
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
-        MultiSelectAsset::register($view);
+        SimpleLineIconsAsset::register($view);
         $this->assertEquals(1, count($view->assetBundles));
         $this->assertArrayHasKey('zacksleo\\yii2\\metronic\\bundles\\plugins\\SimpleLineIconsAsset', $view->assetBundles);
         $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\plugins\\SimpleLineIconsAsset'] instanceof AssetBundle);

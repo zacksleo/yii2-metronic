@@ -20,6 +20,6 @@ class LockAssetTest extends TestCase
         $this->assertArrayHasKey('zacksleo\\yii2\\metronic\\bundles\\pages\\LockAsset', $view->assetBundles);
         $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\pages\\LockAsset'] instanceof AssetBundle);
         $content = $view->renderFile('@tests/data/views/layout.php');
-        $this->assertContains('apages/css/lock.min.css', $content);
+        $this->assertContains('pages/css/lock.min.css', $content);
     }
 }

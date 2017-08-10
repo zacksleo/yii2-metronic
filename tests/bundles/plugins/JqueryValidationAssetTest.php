@@ -17,7 +17,7 @@ class JqueryValidationAssetTest extends TestCase
         $view = $this->getView();
         $this->assertEmpty($view->assetBundles);
         JqueryValidationAsset::register($view);
-        $this->assertEquals(1, count($view->assetBundles));
+        $this->assertEquals(2, count($view->assetBundles));
         $this->assertArrayHasKey('zacksleo\\yii2\\metronic\\bundles\\plugins\\JqueryValidationAsset', $view->assetBundles);
         $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\plugins\\JqueryValidationAsset'] instanceof AssetBundle);
         $content = $view->renderFile('@tests/data/views/layout.php');

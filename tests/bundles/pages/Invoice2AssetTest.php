@@ -20,6 +20,6 @@ class Invoice2AssetTest extends TestCase
         $this->assertArrayHasKey('zacksleo\\yii2\\metronic\\bundles\\pages\\Invoice2Asset', $view->assetBundles);
         $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\pages\\Invoice2Asset'] instanceof AssetBundle);
         $content = $view->renderFile('@tests/data/views/layout.php');
-        $this->assertContains('apages/css/invoice-2.min.css', $content);
+        $this->assertContains('pages/css/invoice-2.min.css', $content);
     }
 }
