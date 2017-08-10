@@ -18,8 +18,7 @@ class BlogAssetTest extends TestCase
         $this->assertEmpty($view->assetBundles);
         BlogAsset::register($view);
         $this->assertEquals(9, count($view->assetBundles));
-        $this->assertArrayHasKey('zacksleo\\yii2\\metronic\\bundles\\basics\\BlogAsset', $view->assetBundles);
-        $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\pages\\BlogAsset'] instanceof AssetBundle);
+        $this->assertArrayHasKey('zacksleo\\yii2\\metronic\\bundles\\pages\\BlogAsset', $view->assetBundles);
         $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\pages\\BlogAsset'] instanceof AssetBundle);
         $content = $view->renderFile('@tests/data/views/layout.php');
         $this->assertContains('pages/css/blog.min.css', $content);

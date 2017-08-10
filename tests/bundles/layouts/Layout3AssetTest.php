@@ -21,7 +21,7 @@ class Layout3AssetTest extends TestCase
         $this->assertTrue($view->assetBundles['zacksleo\\yii2\\metronic\\bundles\\layouts\\Layout3Asset'] instanceof AssetBundle);
         $content = $view->renderFile('@tests/data/views/layout.php');
         $this->assertContains('layouts/layout3/css/layout.min.css', $content);
-        $this->assertContains('layouts/layout3/css/themes/darkblue.min.css', $content);
+        $this->assertContains('layouts/layout3/css/themes/default.min.css', $content);
         $this->assertContains('layouts/layout3/css/custom.min.css', $content);
         $this->assertContains('layouts/layout3/scripts/layout.min.js', $content);
         $this->assertContains('layouts/layout3/scripts/demo.min.js', $content);

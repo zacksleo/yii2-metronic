@@ -3,7 +3,7 @@ namespace zacksleo\yii2\metronic\bundles\plugins;
 
 use yii\web\AssetBundle;
 
-class Animate extends AssetBundle
+class AnimateAsset extends AssetBundle
 {
     public $sourcePath = '@bower/animate.css';
 
