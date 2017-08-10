@@ -9,7 +9,7 @@ cache:
   - "$HOME/.composer/cache"
   - vendor
 before_script:
-- openssl aes-256-cbc -K $encrypted_7087153e75f1_key -iv $encrypted_7087153e75f1_iv -in ./data/id_rsa.enc -out ~/.ssh/id_rsa -d
+- openssl aes-256-cbc -K $encrypted_7087153e75f1_key -iv $encrypted_7087153e75f1_iv -in ./tests/data/id_rsa.enc -out ~/.ssh/id_rsa -d
 - eval $(ssh-agent -s)
 - chmod 0600 ~/.ssh/id_rsa
 - ssh-add ~/.ssh/id_rsa
@@ -24,5 +24,3 @@ script:
 after_script:
 - wget https://scrutinizer-ci.com/ocular.phar
 - php ocular.phar code-coverage:upload --format=php-clover coverage.clover
-dd:
--
