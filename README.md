@@ -9,9 +9,12 @@
 
 ## Quick Start
 
-### Config composer.json
+### Config
 
-```
+add asset-packagist in composer.json,
+so you can use bower/npm packages
+
+```json
   "repositories": {
     "asset-packagist": {
       "type": "composer",
@@ -22,29 +25,29 @@
 
 ### Install
 
-```
+```bash
 composer require zacksleo/yii2-metronic
 ```
 
 ### Usage
 
-+ ** For Layout **
++ **For Layouts**
 
-```
+```php
 use zacksleo\yii2\metronic\bundles\layouts\LayoutAsset;
 LayoutAsset::register($this);
 ```
 
-+ ** For Plugins **
++ **For Plugins**
 
-```
+```php
 use zacksleo\yii2\metronic\bundles\plugins\AnimateAsset;
 AnimateAsset::register($this);
 ```
 
-+ ** For Pages **
++ **For Pages**
 
-```
+```php
 use zacksleo\yii2\metronic\bundles\pages\AboutAsset;
 AboutAsset::register($this);
 ```
