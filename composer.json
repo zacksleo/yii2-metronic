@@ -30,7 +30,8 @@
     "bower-asset/select2-bootstrap-theme": "^0.1.0-beta.10",
     "bower-asset/simple-line-icons": "~2.3",
     "bower-asset/animate.css": "^3.5",
-    "bower-asset/bootstrap-datepicker": "^1.6"
+    "bower-asset/bootstrap-datepicker": "^1.6",
+    "zacksleo/metronic": "^4.7.6"
   },
   "require-dev": {
     "phpunit/phpunit": "~4.4"
